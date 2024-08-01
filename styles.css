@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+#container {
+    width: 300px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+#keypad {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#keypad li {
+    background-color: #d3d3d3; 
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#keypad li:hover {
+    background-color: #c0c0c0; 
+    transform: scale(1.05); 
+}
+
+.number {
+    background-color: #d3d3d3; 
+}
+
+.add, .sub, .div, .mul {
+    background-color: #ff8c00; 
+    color: #fff; 
+}
+
+.mul {
+    content: '×'; 
+}
